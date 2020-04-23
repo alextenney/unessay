@@ -29,7 +29,7 @@ int main(int argc, char **argv)
 
  d = malloc(sizeof(struct data));
  f = malloc(sizeof(struct fp));
- f->fp = nowinner;
+ f->fp = no_treats;
 
  printf("data is at %p, fp is at %p\n", d, f);
 
