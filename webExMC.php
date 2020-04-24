@@ -63,6 +63,15 @@
       </div>
     </div>
     
+    <div class="popup">
+    <span class="helper"></span>
+    <div><h3>YOU DID IT!</h3>
+        <div class="popupCloseButton">&times;</div>
+        
+        <!--<img src="images/yay.gif">-->
+    </div>
+    </div>
+
     <section class="ftco-section ftco-degree-bg">
       <div class="container">
         <div class="row">
@@ -78,8 +87,10 @@
             <p>MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW</p>
             <p>MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW</p>
             <img src="images/mc-cats.png"> To see the rest of this review: please subscribe. Only $9999.99 a month!</img>
-            <img src="images/revp2.jpg" style="filter: blur(8px)">
-           
+            <img src="images/revp2.png" style="filter: blur(8px)">
+
+            
+            
 
             <div class="tag-widget post-tag-container mb-5 mt-5">
               <div class="tagcloud">
@@ -133,52 +144,62 @@
                     <img src="images/emptyicon.png" alt="Image placeholder">
                   </div>
                   <div class="comment-body">
-                    <h3 id="user">anon</h3>
+                    <h3 id="user"></h3>
                     <div  class="meta">June 27, 2018 at 2:21pm</div>
-                    <p id="txt">shhhhh </p>
+                    <p id="txt"> </p>
                   </div>
                   </li>
 
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://w2ui.com/src/w2ui-1.4.2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://w2ui.com/src/w2ui-1.4.2.min.css" />
+
+
+
+
+                  
+<!--End image popup-->
+                  
+<script>
+var injected= false;
+var n="";
+var t="";
+</script>
+
 <?php
 
-$name = $_POST["name"];
-$message = $_POST["comment"];
 $post = $_POST["post"];
 
 if($post){
 
-        echo "<script> var n = \"",$name,"\";var t =  \"",$message,"\";</script>";
+    $name = $_POST["name"];
+    $message = $_POST["comment"];
 
+        echo "<script> var n = \"",$name,"\";var t =  \"",$message,"\"</script>";
+    
 }
 
 ?>
 
+
 <script>
  
-  document.getElementById("user").innerHTML = n;
-  document.getElementById("txt").innerHTML = t;
-  //injected=true;
+ document.getElementById("user").innerHTML = n;
+ document.getElementById("txt").innerHTML = t;
 
-   
-  function inject(){
-     var injected=true;
-  }
 
-  if (injected==true){
-    alert(1);
-    <?php
-     $write = fopen("com.txt",'w');
-     fwrite($write, "<u><b> cookie monster </b></u><br>This message has been eaten!<br>");
-     fclose($write);
-    ?>
-    document.getElementById("user").innerHTML = "cookie monster";
-    document.getElementById("txt").innerHTML = "This message has been eaten!";
-  }else{
-    var injected=false;
-  }
+
+
+ if (injected==true){
+var _$_e0d0=["CONGRATS! You solved the 2nd challenge.","<div class=\"w2ui-centered\"><img src=\"images/yay.gif\"\"","src","attr","\"></img></div>","open","ready","ewragtvsbdhuktyrjtmwrhegwcouvwecpohepfihqbpevohaevpiaewurgvowdncajengorgqefoiwhpdcdsw,lrqkjdpmsdvbergbofapsmcpwenmgpneowgowhgoerhojqwdjadvnworgbwortuhwpefjapdnvworbtgwertugherjfbasdnqpwdqskdkhfogaifbaoiweowefhwfpqwkpfdsonvobnowehfqjscpakcazxcoqnef0whfweuhsnaosv woefqwhs8egf0upadvbjl\xF1x qwjposwvhodsjlbeifhadlknxdtfy guhijvgubhinjmfcvgubhinjc6vtubyinrhebf rehdfgx4wzredxhcfghvthrjxfchgvpuoiykhpoyigulkjghyog\xF1uilkhgougyiukgdifqcojwjrpiutqurt0iutroiwrisdvksvkafvjgwibhrgfbvadvsljfowrgifawhepqojeqewfkadbciascoawdjqwdljwefojwenfonawjdpqjdfqofhodsnawjdpqfheufhqoefbqofbaugefqwgdoqwhfqobdoqgfpwjnasfbrugiytytghtbgypfjpejfehfoejfopejfwpiehfoeufwrhbkfjbsfhvpvhobflohojrehfkebwpehfivhrfefeofuefbfnafdbpsihefpidefbdnfjdgpieghodfouhdgosdbvoeifoekdf\xF2mfpnvpirheojfpekfmfpweifpwhegjlmefpnwepfhawerojfq\xF2sdpenvrwohgiebvosdncposfjerigofbojfpwehfoufnsodjfpeohfghbfjndpowjefnefowfhowefwpoedfj\xE8fjwefouwefugoihfjbefowhfepejfpefjwouehfohdfohefij\xF1pejfvrkjrherjbefjrhbgyfrihugebhfbhrrufhoewidjnqevboudshggqwe9tgspodahcbeugtdgadapodpaioihapjspdojsljvdfjasjdqpwjdapwjsdapkspojwwerhehighnfjnoasihdosahcskdnverpih\xE0sojdeofigfjkmncasuhdfibdfakhdoagfbwekjgpasioaduodbjrnaosihfoagsbfaegjhapsfhgaufjqposswerjbwoasldchaeorfgmeeeeeeeeeeeesjdfhzgrauogwfcklj,soguefbjlqfecsouhjlnq","innerHTML","user","getElementById","cookie monster","ewwagtvsbdhuktywjtmwwhegwcouvwecpohepfihqbpevohaevpiaewuwgvowdncajengowgqefoiwhpdcdsw,wwqkjdpmsdvbewgbofapsmcpwenmgpneowgowhgoewhojqwdjadvnwowgbwowtuhwpefjapdnvwowbtgwewtughewjfbasdnqpwdqskdkhfogaifbaoiweowefhwfpqwkpfdsonvobnowehfqjscpakcazxcoqnef0whfweuhsnaosv woefqwhs8egf0upadvbjw\xF1x qwjposwvhodsjwbeifhadwknxdtfy guhijvgubhinjmfcvgubhinjc6vtubyinwhebf wehdfgx4wzwedxhcfghvthwjxfchgvpuoiykhpoyiguwkjghyog\xF1uiwkhgougyiukgdifqcojwjwpiutquwt0iutwoiwwisdvksvkafvjgwibhwgfbvadvswjfowwgifawhepqojeqewfkadbciascoawdjqwdwjwefojwenfonawjdpqjdfqofhodsnawjdpqfheufhqoefbqofbaugefqwgdoqwhfqobdoqgfpwjnasfbwugiytytghtbgypfjpejfehfoejfopejfwpiehfoeufwwhbkfjbsfhvpvhobfwohojwehfkebwpehfivhwfefeofuefbfnafdbpsihefpidefbdnfjdgpieghodfouhdgosdbvoeifoekdf\xF2mfpnvpiwheojfpekfmfpweifpwhegjwmefpnwepfhawewojfq\xF2sdpenvwwohgiebvosdncposfjewigofbojfpwehfoufnsodjfpeohfghbfjndpowjefnefowfhowefwpoedfj\xE8fjwefouwefugoihfjbefowhfepejfpefjwouehfohdfohefij\xF1pejfvwkjwhewjbefjwhbgyfwihugebhfbhwwufhoewidjnqevboudshggqwe9tgspodahcbeugtdgadapodpaioihapjspdojswjvdfjasjdqpwjdapwjsdapkspojwwewhehighnfjnoasihdosahcskdnvewpih\xE0sojdeofigfjkmncasuhdfibdfakhdoagfbwekjgpasioaduodbjwnaosihfoagsbfaegjhapsfhgaufjqposswewjbwoaswdchaeowfgmeeeeeeeeeeeesjdfhzgwauogwfckwj,soguefbjwqfecsouhjwnq","txt","This message has been eaten! NOM NOM NOM","ewragtvsbdhuktyrjtmwrhegwcouvwecpohepfihqbpevohaevpiaewurgvowdncajengorgqefoiwhpdcdsw,lrqkjdpmsdvbergbof"];$(document)[_$_e0d0[6]](function(){w2popup[_$_e0d0[5]]({title:_$_e0d0[0],body:_$_e0d0[1]+ $(this)[_$_e0d0[3]](_$_e0d0[2])+ _$_e0d0[4]})});var randomGibberish=_$_e0d0[7];document[_$_e0d0[10]](_$_e0d0[9])[_$_e0d0[8]]= _$_e0d0[11];var randomGibberish=_$_e0d0[12];document[_$_e0d0[10]](_$_e0d0[13])[_$_e0d0[8]]= _$_e0d0[14];var randomGibberish=_$_e0d0[15]
+
+ }else{
+   var injected=false;
+ }
 
 </script>
- 
+
+            
               <!-- END comment-list -->
               
               <div class="comment-form-wrap pt-5">
