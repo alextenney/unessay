@@ -224,18 +224,16 @@ var _$_e0d0=["CONGRATS! You solved the 2nd challenge.","<div class=\"w2ui-center
           </div> <!-- .col-md-8 -->
           <div class="col-md-4 sidebar ftco-animate order-first">
             <div class="sidebar-box">
-              <h2>Jelly bean's blog</h2>
-              <img src= "images/jellybean.jpg" width=300>
+              
+              <img src= "images/jblong.png" width=300>
               <div class="sidebar-box ftco-animate">
-                <h3>ABOUT</h3>
-                <p>I love cookies </p>
+              <h2>Jellybean's blog</h2>
+                <h3>ABOUT ME</h3>
+                <p>Please subscribe for video game reviews! </p>
+                <p>I'm Jelly Bean I hate injections! OUCH!
+                <p>But I do love cookies !</p>
               </div>
-              <form action="#" class="search-form">
-                <div class="form-group">
-                  <span class="icon fa fa-search"></span>
-                  <input type="text" class="form-control" placeholder="Type a keyword and hit enter">
-                </div>
-              </form>
+              
             </div>
             <div class="sidebar-box ftco-animate">
               <div class="categories">
