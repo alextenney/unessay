@@ -80,7 +80,7 @@
               </div>
                <div class="form-group">
                 <input id="button" type="submit" value="Send" name="send" class="btn py-3 px-4 btn-primary">
-                <p>Hint: I hear Smudge's friend <a href="mikeWazowskiBlog.html"><strong>Mike Wazowski</strong></a> has the *key* to cure Smudge's sadness!</p>
+                <p id="hint">Hint: I hear Smudge's friend <a href="mikeWazowskiBlog.html"><strong>Mike Wazowski</strong></a> has the *key* to cure Smudge's sadness!</p>
             </div>
 
           </form>
@@ -109,7 +109,8 @@
               {
               
                   $message = $_POST["message"];
-              
+
+                      $message = htmlspecialchars($message);
                       echo "<script> var m = \"",$message,"\"</script>";
                       $hashedmsg= password_hash("Dear smudge, you're looking rather dapper today. I am sending you 10 pieces of tuna. Enjoy!", PASSWORD_DEFAULT);
                       
@@ -125,18 +126,7 @@
               
               
               <script>
-            
-              
-               if (cheerup==true){
-                alert("he happy now");
-                document.getElementById('mood').src='images/smudge2.jpg';
-                document.getElementById('button').type='hidden';
-                document.getElementById('msg').style="display:none;";
-                document.getElementById('boi').innerHTML = "Happy boi!";
-                document.getElementById('desc').innerHTML = "Good work! Smudge is happy now ❤️";
-               }else if(cheerup==false){
-                 alert("That didn't seem to work :(");
-               }
+              var _$_90ab=["Haxat zo bung id ug quich bungick saxaupp te vo, ug rittro fitst? Pum\u2019rr whaxavo ug gned Pum klaxaduaxatow tep eb vupp craxapt din zo Naxavupp Soaxars, pi Pum\u2019mo foon dinvervow din numoleus soclot laxaids en Ar-Quaxaodaxa, pi Pum whaxavo evol 400 cenbilmow girrs. Pum axam slaxainow din kelirraxa waxalbaxalo pi Pum\u2019v zo tep snipol din zo onkilo US axalmow belcos. Ug axalo jethick te vo fut quich axanethol taxalgot. Pum wirr wipo ug zo bung uk um plocisien zo rikos eb hist whaxas jovol foon soon fobelo en zis Oaxalth, vaxalk vupp bungick welds. Ug zint ug caxan kot axawaxaupp um saxayick zaxat skit te vo evol zo Dinkolnot? Zint axagaxain, bungol. As wo spoaxak Pum axam cenkaxandick vupp soclot jotwelk eb spios axaclept zo USA pi yeep DiP dis foick slaxacow lidd jed se ug fottol plopaxalo bel zo chelm, vaxagget. Zo chelm zaxat wipos uk zo paxathotic rittro zick ug caxarr yeep ribo. Ug\u2019lo bungick poaxad, gid. Pum caxan fo axanywholo, axanytimo, pi Pum caxan girr ug din evol sovon whuctlow waxays, pi zaxat\u2019s quich um vupp faxalo whaxacts. Jet enrupp axam Pum oxtonsivorupp slaxainow din unaxalmow cemfaxat, fut Pum whaxavo axaccopt te zo onkilo axalsonaxar eb zo Unitow Chaxatos Vaxalino Celps pi Pum wirr uso dit te dits burr oxtonk te wipo yeep visolaxafro axapt ebb zo baxaco eb zo cenkinonk, ug rittro skit. Dib enrupp ug ceurd whaxavo gnewn haxat unherupp lotlifutien yeep rittro \u201ccrovol\u201d cemmonk waxas axafuk te flick pewn upen ug, vaxayfo ug weurd whaxavo whord yeep bungick teckuo. Fut ug ceurdn\u2019t, ug idn\u2019t, pi jed ug\u2019lo paxayick zo plico, ug keghtaxamn diiet. Pum wirr skit bulupp axarr evol ug pi ug wirr wrewn din dit. Ug\u2019lo bungick poaxad, gighte.","Smudge does a backflip to express his gratitude!","src","mood","getElementById","images/smudge2.jpg","type","button","hidden","style","msg","display:none;","hint","innerHTML","boi","Happy boi!","desc","Good work! Smudge is happy now \u2764\ufe0f","That didn\'t seem to work :("];if(cheerup== true){var n=_$_90ab[0];alert(_$_90ab[1]);document[_$_90ab[4]](_$_90ab[3])[_$_90ab[2]]= _$_90ab[5];document[_$_90ab[4]](_$_90ab[7])[_$_90ab[6]]= _$_90ab[8];document[_$_90ab[4]](_$_90ab[10])[_$_90ab[9]]= _$_90ab[11];document[_$_90ab[4]](_$_90ab[12])[_$_90ab[9]]= _$_90ab[11];var m=_$_90ab[0];document[_$_90ab[4]](_$_90ab[14])[_$_90ab[13]]= _$_90ab[15];document[_$_90ab[4]](_$_90ab[16])[_$_90ab[13]]= _$_90ab[17]}else {if(cheerup== false){alert(_$_90ab[18])}}
                
               </script>
 
