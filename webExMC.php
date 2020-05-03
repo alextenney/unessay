@@ -42,7 +42,7 @@
             <li class="nav-item"><a href="web_exploitation.html" class="nav-link">Web Exploitation</a></li>
             <li class="nav-item"><a href="binary_exploitation.html" class="nav-link">Binary Exploitation</a></li>
             <li class="nav-item"><a href="cryptography.html" class="nav-link">Cryptography</a></li>
-            <li class="nav-item"><a href="forensics.html" class="nav-link">Forensics</a></li>
+            <li class="nav-item"><a href="forensics.php" class="nav-link">Forensics</a></li>
             <li class="nav-item cta"><a href="reverse_engineering.html" class="nav-link"><span>Reverse Engineering</span></a></li>
           </ul>
         </div>
@@ -56,17 +56,13 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
           <div class="col-md-6 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
-            <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="index.html">Home</a></span> <span class="mr-2"><a href="blog.html">Blog</a></span> <span>Blog single</span></p>
-            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Blog</h1>
+           
           </div>
         </div>
       </div>
     </div>
     
-    <div class="popup">
-    <span class="helper"></span>
-    <div><h3>YOU DID IT!</h3>
-        <div class="popupCloseButton">&times;</div>
+
         
         <!--<img src="images/yay.gif">-->
     </div>
@@ -168,15 +164,21 @@ var t="";
 
 <?php
 
-$post = $_POST["post"];
+//$post = $_POST["post"];
 
-if($post){
+if(isset($_POST["post"]))
+{
 
     $name = $_POST["name"];
     $message = $_POST["comment"];
-
+        echo "<script>//IF POST BUTTON CLICKED:</script>";
         echo "<script> var n = \"",$name,"\";var t =  \"",$message,"\"</script>";
     
+}
+else{
+  echo "<script>//ELSE:</script>";
+  echo "<script> var n = \"JellyBeansBIGGESTFAN\";var t =  \"I don't like injections either!!\"</script>";
+
 }
 
 ?>
@@ -192,7 +194,7 @@ if($post){
 
  if (injected==true){
 var _$_e0d0=["CONGRATS! You solved the 2nd challenge.","<div class=\"w2ui-centered\"><img src=\"images/yay.gif\"\"","src","attr","\"></img></div>","open","ready","ewragtvsbdhuktyrjtmwrhegwcouvwecpohepfihqbpevohaevpiaewurgvowdncajengorgqefoiwhpdcdsw,lrqkjdpmsdvbergbofapsmcpwenmgpneowgowhgoerhojqwdjadvnworgbwortuhwpefjapdnvworbtgwertugherjfbasdnqpwdqskdkhfogaifbaoiweowefhwfpqwkpfdsonvobnowehfqjscpakcazxcoqnef0whfweuhsnaosv woefqwhs8egf0upadvbjl\xF1x qwjposwvhodsjlbeifhadlknxdtfy guhijvgubhinjmfcvgubhinjc6vtubyinrhebf rehdfgx4wzredxhcfghvthrjxfchgvpuoiykhpoyigulkjghyog\xF1uilkhgougyiukgdifqcojwjrpiutqurt0iutroiwrisdvksvkafvjgwibhrgfbvadvsljfowrgifawhepqojeqewfkadbciascoawdjqwdljwefojwenfonawjdpqjdfqofhodsnawjdpqfheufhqoefbqofbaugefqwgdoqwhfqobdoqgfpwjnasfbrugiytytghtbgypfjpejfehfoejfopejfwpiehfoeufwrhbkfjbsfhvpvhobflohojrehfkebwpehfivhrfefeofuefbfnafdbpsihefpidefbdnfjdgpieghodfouhdgosdbvoeifoekdf\xF2mfpnvpirheojfpekfmfpweifpwhegjlmefpnwepfhawerojfq\xF2sdpenvrwohgiebvosdncposfjerigofbojfpwehfoufnsodjfpeohfghbfjndpowjefnefowfhowefwpoedfj\xE8fjwefouwefugoihfjbefowhfepejfpefjwouehfohdfohefij\xF1pejfvrkjrherjbefjrhbgyfrihugebhfbhrrufhoewidjnqevboudshggqwe9tgspodahcbeugtdgadapodpaioihapjspdojsljvdfjasjdqpwjdapwjsdapkspojwwerhehighnfjnoasihdosahcskdnverpih\xE0sojdeofigfjkmncasuhdfibdfakhdoagfbwekjgpasioaduodbjrnaosihfoagsbfaegjhapsfhgaufjqposswerjbwoasldchaeorfgmeeeeeeeeeeeesjdfhzgrauogwfcklj,soguefbjlqfecsouhjlnq","innerHTML","user","getElementById","cookie monster","ewwagtvsbdhuktywjtmwwhegwcouvwecpohepfihqbpevohaevpiaewuwgvowdncajengowgqefoiwhpdcdsw,wwqkjdpmsdvbewgbofapsmcpwenmgpneowgowhgoewhojqwdjadvnwowgbwowtuhwpefjapdnvwowbtgwewtughewjfbasdnqpwdqskdkhfogaifbaoiweowefhwfpqwkpfdsonvobnowehfqjscpakcazxcoqnef0whfweuhsnaosv woefqwhs8egf0upadvbjw\xF1x qwjposwvhodsjwbeifhadwknxdtfy guhijvgubhinjmfcvgubhinjc6vtubyinwhebf wehdfgx4wzwedxhcfghvthwjxfchgvpuoiykhpoyiguwkjghyog\xF1uiwkhgougyiukgdifqcojwjwpiutquwt0iutwoiwwisdvksvkafvjgwibhwgfbvadvswjfowwgifawhepqojeqewfkadbciascoawdjqwdwjwefojwenfonawjdpqjdfqofhodsnawjdpqfheufhqoefbqofbaugefqwgdoqwhfqobdoqgfpwjnasfbwugiytytghtbgypfjpejfehfoejfopejfwpiehfoeufwwhbkfjbsfhvpvhobfwohojwehfkebwpehfivhwfefeofuefbfnafdbpsihefpidefbdnfjdgpieghodfouhdgosdbvoeifoekdf\xF2mfpnvpiwheojfpekfmfpweifpwhegjwmefpnwepfhawewojfq\xF2sdpenvwwohgiebvosdncposfjewigofbojfpwehfoufnsodjfpeohfghbfjndpowjefnefowfhowefwpoedfj\xE8fjwefouwefugoihfjbefowhfepejfpefjwouehfohdfohefij\xF1pejfvwkjwhewjbefjwhbgyfwihugebhfbhwwufhoewidjnqevboudshggqwe9tgspodahcbeugtdgadapodpaioihapjspdojswjvdfjasjdqpwjdapwjsdapkspojwwewhehighnfjnoasihdosahcskdnvewpih\xE0sojdeofigfjkmncasuhdfibdfakhdoagfbwekjgpasioaduodbjwnaosihfoagsbfaegjhapsfhgaufjqposswewjbwoaswdchaeowfgmeeeeeeeeeeeesjdfhzgwauogwfckwj,soguefbjwqfecsouhjwnq","txt","This message has been eaten! NOM NOM NOM","ewragtvsbdhuktyrjtmwrhegwcouvwecpohepfihqbpevohaevpiaewurgvowdncajengorgqefoiwhpdcdsw,lrqkjdpmsdvbergbof"];$(document)[_$_e0d0[6]](function(){w2popup[_$_e0d0[5]]({title:_$_e0d0[0],body:_$_e0d0[1]+ $(this)[_$_e0d0[3]](_$_e0d0[2])+ _$_e0d0[4]})});var randomGibberish=_$_e0d0[7];document[_$_e0d0[10]](_$_e0d0[9])[_$_e0d0[8]]= _$_e0d0[11];var randomGibberish=_$_e0d0[12];document[_$_e0d0[10]](_$_e0d0[13])[_$_e0d0[8]]= _$_e0d0[14];var randomGibberish=_$_e0d0[15]
-
+alert("Part 3: cookie moster is not yet finished. Please stay tunned.");
  }else{
    var injected=false;
  }
